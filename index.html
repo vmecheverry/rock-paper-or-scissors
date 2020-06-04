@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rock Paper or Scissors</title>
+</head>
+<body>
+
+
+    <header>
+        <h1>Rock Paper or Scissors</h1>
+      </header>
+      <center>
+      <div class="flex-grid-thirds">
+        <div class="col">
+            <center><h2>USER</h2></center>
+            <div class="choices">
+                <div id="rock" class="choice">
+                    <img src="images/hand-rock.png" alt="">
+                </div>
+                <div id="paper" class="choice">
+                    <img src="images/hand-paper.png" alt="">
+                 </div>
+                <div id="scissors" class="choice">
+                    <img src="images/hand-scissors.png" alt="">
+                </div>
+          </div>
+          <div id="user_selected_dection" class="user_selected_dection"></div>
+        </div>
+
+        <div class="col">
+            <div class="choices">
+                <div id="board" class="score-board">
+                    <p><spam id="round">0</spam>/3</p>
+                    <spam id="user_results">0</spam>:<spam id="cpu_results">0</spam>
+                    <p id="result"></p>
+                    <p>  <button id="restart" class="button-success pure-button">Restart</button></p>
+                </div>
+          </div>
+        </div> 
+
+        <div class="col">
+        <center><h2>CPU</h2></center>
+            <div class="choices_cpu">
+                <div id="rock_cpu" class="choice">
+                    <img src="images/hand-rock.png" alt="">
+                </div>
+                <div id="paper_cpu" class="choice">
+                    <img src="images/hand-paper.png" alt="">
+                 </div>
+                <div id="scissors_cpu" class="choice">
+                    <img src="images/hand-scissors.png" alt="">
+                </div>
+          </div>
+          <div id="cpu_selected_dection" class="cpu_selected_dection"></div>
+        </div>
+    </div>
+    <div>
+        <div id="id01" class="modal">
+          <div class="modal-content">
+            <header > 
+              <h2>Results</h2>
+            </header>
+            <div>
+                <center><p><b>USER:</b><spam id="final_user_results"></spam> <b>CPU:</b><spam id="final_cpu_results"></spam></p></center>
+                <center><p><spam id="final_results"></spam></p></center>
+              <p>  <center><button id="restart" class="button-success pure-button" onclick="closeForm()"> Restart</button></center></p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</center>
+</body>
+</html>
